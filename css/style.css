@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #f9f6f6;
+    background-color: #f4f4f9;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #cd1908; /* Zomato theme color */
+}
+
+#logo img {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+   
+}
+#logo{
+    height: 60px;
+    padding: 10px;
+    margin: 10px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li {
+    /* position::relative; */
+    display: inline;
+    font-size: 18px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #f4f4f9;
+}
+
+/* Main section styling */
+main {
+    padding: 50px 20px;
+}
+
+/* Hero Section (Background Image Section) */
+.hero-section {
+    background-image: url('/img/Zomato.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section p {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-section input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.hero-section input::placeholder {
+    font-style: italic;
+}
+
+/* New Section - About */
+.about-section {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 50px 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ed4a09;
+    font-weight: bold;
+}
+
+.about-section ul {
+    list-style-type: none;
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+.about-section ul li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.about-section ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #ff6f61;
+}
+
+/* Footer styling */
+footer {
+    background-color: #b50303;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero-section p {
+        font-size: 24px;
+    }
+
+    .hero-section input {
+        width: 80%;
+    }
+
+    .about-section {
+        padding: 30px 15px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

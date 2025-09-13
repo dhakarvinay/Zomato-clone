@@ -1,0 +1,142 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.header { height:150px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgb(213, 6, 6);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+     
+}
+
+.logo {
+    font-size: 32px;
+    color: #ff4c4c;
+}
+
+.location-search {
+    display: flex;
+    flex: 1;
+    margin-left: 50px;
+}
+
+.location-search input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-signup button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inspiration image { width: 20px;
+    margin: 40px 50px;
+}
+
+.inspiration h2 {
+    margin: 30px;
+    font-size: 24px;
+    /* font-family: Times, "Times New Roman", Georgia, serif; */
+       margin-bottom: 100px;
+}
+
+.dish-items {
+    
+    /* width: 200px; */
+    display: flex;
+    gap: 100px;
+    justify-content: space-around; /* Aligns items with space around them */
+    margin-bottom: 100px; /* Adds some space at the bottom */
+}
+.dish {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    width: 120px; /* Set width of each dish item */
+    height: 120px; /* Set height of each dish item */
+    
+}
+.dish img {
+    
+    width: 200px; /* Adjust image width */
+    /* height: 70px; Adjust image height */
+    object-fit: contain; /* Ensures image fits without distortion */
+    margin-bottom: 10px; /* Adds space between image and text */
+}
+
+
+
+.restaurant-list {
+    margin: 40px 50px;
+}
+
+.restaurant-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.restaurants {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:0px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.restaurant-card {
+    background-color: rgb(251, 250, 250);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.restaurant-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.restaurant-card p {
+    color: #777;
+    margin: 5px 0;
+}
+
